@@ -21,7 +21,7 @@
 }
 ```
 
-1. Add secret key and port info  to env information in to .env file as you see below
+2. Add secret key and port info  to env information in to .env file as you see below
 
 ```env
 
@@ -35,7 +35,7 @@
 
  #  :memo: Description
 
- This project has 3 pages these are register, login and dashboard. The user is directed to login after registration.When user loggin a session and token are created saved to DB using typeormStore module.The session is including browser information ,userID and token.Token added under the cookies as a cookie but you can save to local storage too.After user logout, session and token are destroyed from db and browser but If the user just closes the browser window, user can access the user page without logging in until the token expires again through the same browser. 
+This project has 3 pages these are register, login and dashboard. The user is directed to login after registration.When user loggin a session and token are created saved to DB using typeormStore module.The session is including browser information ,userID and token.Token added under the cookies as a cookie but you can save to local storage too.After user logout, session and token are destroyed from db and browser but If the user just closes the browser window, user can access the user dashboard without logging in until the token expires through the same browser.
 
 **We use session and token but what are they exactly ? Lets look over together!** 
 
